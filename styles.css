@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Plus Jakarta Sans;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  gap: 15px;
+}
+
+.header-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 74px;
+}
+
+.notification-style {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30.24px;
+  text-align: left;
+  color: #1c202b;
+}
+
+.number-style {
+  background-color: #0a327b;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.all-read-style {
+  color: #5e6778;
+}
+
+.box-style {
+  display: flex;
+  align-items: center;
+  background-color: #f7fafd;
+  padding: 16px 26px;
+  gap: 13px;
+  border-radius: 4px;
+}
+
+.avatar-style {
+  width: 39px;
+  height: 39px;
+}
+
+.name-info-style {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  background: #f65552;
+}
+
+.time-style {
+  display: flex;
+  color: #939cad;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chess-club-style {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a327b;
+  margin-left: 4px;
+}
+
+.message-input-style {
+  width: 263px;
+  border: 1px solid #dde7ee;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.64px;
+  text-align: left;
+  color: #5e6778;
+  margin-top: -30px;
+  margin-left: 66px;
+}
+
+.image-chess {
+  width: 39px;
+  transform: translate(213px, -62px);
+}
+
+.five-end-game-style {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5e6778;
+}
+
+.box-one-style {
+  padding: 16px 20px;
+  display: flex;
+  gap: 13px;
+}
