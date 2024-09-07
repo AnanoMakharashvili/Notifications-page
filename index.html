@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/favicon-32x32.png" />
     <title>Notifications page</title>
@@ -10,11 +10,11 @@
     <div class="container">
       <div class="header-style">
         <h1 class="notification-style">
-          Notifications <span class="number-style">3</span>
+          Notifications <span class="number-style" id="notifications">3</span>
         </h1>
-        <span class="all-read-style">Mark all as read</span>
+        <span class="all-read-style" id="mark-read">Mark all as read</span>
       </div>
-      <div class="box-style">
+      <div class="box-style" id="box-style">
         <img
           src="assets/avatar-mark-webber.webp"
           rel="avatar-mark-webber"
@@ -23,14 +23,19 @@
         <div>
           <span class="name-info-style">Mark Webber</span>
           <span
-            >reacted to your recent<br />
-            post <span>My first tournament today!</span>
-            <span class="dot"></span
+            >reacted to your recent post
+            <span>My first tournament today!</span>
+            <span class="dot" id="dot"></span
             ><span class="time-style">1m ago</span></span
           >
         </div>
+        <p class="message-input-style" id="message-input-style">
+          Hello mark webber, thanks for setting up the Chess Club. I’ve been a
+          member for a few weeks now and I’m already having lots of fun and
+          improving my game.
+        </p>
       </div>
-      <div class="box-style">
+      <div class="box-style" id="box-style">
         <img
           src="assets/avatar-angela-gray.webp"
           rel="avatar-angela-gray"
@@ -39,12 +44,17 @@
         <div>
           <span class="name-info-style">Angela Gray </span>
           <span
-            >followed you <span class="dot"></span>
+            >followed you <span class="dot" id="dot"></span>
             <span class="time-style">5m ago</span></span
           >
         </div>
+        <p class="message-input-style" id="message-input-style">
+          Hello angela grey, thanks for setting up the Chess Club. I’ve been a
+          member for a few weeks now and I’m already having lots of fun and
+          improving my game.
+        </p>
       </div>
-      <div class="box-style">
+      <div class="box-style" id="box-style">
         <img
           src="assets/avatar-jacob-thompson.webp"
           rel="avatar-jacob-thompson"
@@ -53,14 +63,20 @@
         <div>
           <span class="name-info-style">Jacob Thompson</span>
           <span
-            >has joined your <br />
-            group<span class="chess-club-style"> Chess Club</span>
-            <span class="dot"></span
+            >has joined your group<span class="chess-club-style">
+              Chess Club</span
+            >
+            <span class="dot" id="dot"></span
             ><span class="time-style">1 day ago</span></span
           >
         </div>
+        <p class="message-input-style" id="message-input-style">
+          Hello jacob thompson, thanks for setting up the Chess Club. I’ve been
+          a member for a few weeks now and I’m already having lots of fun and
+          improving my game.
+        </p>
       </div>
-      <div class="box-one-style">
+      <div class="box-one-style" id="box-one-style">
         <img
           src="assets/avatar-rizky-hasanuddin.webp"
           rel="avatar-rizky-hasanuddin"
@@ -74,12 +90,12 @@
           >
         </div>
       </div>
-      <p class="message-input-style">
+      <p class="message-input-style" id="message-input-style">
         Hello, thanks for setting up the Chess Club. I’ve been a member for a
         few weeks now and I’m already having lots of fun and improving my game.
       </p>
 
-      <div class="box-one-style">
+      <div class="box-one-style" id="box-one-style">
         <img
           src="assets/avatar-kimberly-smith.webp"
           rel="avatar-kimberly-smith"
@@ -93,8 +109,13 @@
           >
           <img src="assets/image-chess.webp " class="image-chess" />
         </div>
+        <p class="message-input-style" id="message-input-style">
+          Hello, thanks for setting up the Chess Club. I’ve been a member for a
+          few weeks now and I’m already having lots of fun and improving my
+          game.
+        </p>
       </div>
-      <div class="box-one-style">
+      <div class="box-one-style" id="box-one-style">
         <img
           src="assets/avatar-nathan-peterson.webp"
           rel="avatar-nathan-peterson"
@@ -110,8 +131,13 @@
             <span class="time-style">2 weeks ago</span></span
           >
         </div>
+        <p class="message-input-style" id="message-input-style">
+          Hello, thanks for setting up the Chess Club. I’ve been a member for a
+          few weeks now and I’m already having lots of fun and improving my
+          game.
+        </p>
       </div>
-      <div class="box-one-style">
+      <div class="box-one-style" id="box-one-style">
         <img
           src="assets/avatar-anna-kim.webp"
           rel="avatar-anna-kim"
@@ -124,7 +150,13 @@
             <span class="time-style">2 weeks ago</span></span
           >
         </div>
+        <p class="message-input-style" id="message-input-style">
+          Hello, thanks for setting up the Chess Club. I’ve been a member for a
+          few weeks now and I’m already having lots of fun and improving my
+          game.
+        </p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

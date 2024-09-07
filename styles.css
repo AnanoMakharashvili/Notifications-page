@@ -96,6 +96,7 @@
   color: #5e6778;
   margin-top: -30px;
   margin-left: 66px;
+  display: none;
 }
 
 .image-chess {
@@ -113,4 +114,46 @@
   padding: 16px 20px;
   display: flex;
   gap: 13px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 18px;
+  }
+  .header-style {
+    gap: 356px;
+  }
+
+  .notification-style {
+    font-size: 24px;
+  }
+
+  .all-read-style {
+    font-size: 16px;
+  }
+
+  .box-style {
+    color: #5e6778;
+  }
+
+  .box-one-style {
+    color: #5e6778;
+  }
+
+  .avatar-style {
+    width: 45px;
+    height: 45px;
+  }
+
+  .message-input-style {
+    font-size: 16px;
+    width: 526px;
+    border: 1px solid #dde7ee;
+    background: #e5effa;
+    padding: 17px 20px;
+    margin-top: -11px;
+    cursor: pointer;
+    color: #5e6778;
+    display: none;
+  }
 }
