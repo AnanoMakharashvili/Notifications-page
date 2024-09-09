@@ -6,21 +6,27 @@ const getDot = document.querySelectorAll(".dot");
 const inputText = document.querySelectorAll(".message-input-style");
 
 notificationUnRead.innerText = notificationUnRead.length;
-let previousDescription;
+let previousDescription = null;
 
 notificationUnRead.forEach((message, index) => {
-  message.addEventListener("click", (event) => {
+  message.addEventListener("click", () => {
+    if (previousDescription) {
+      previousDescription.style.display = "none";
+    }
     if (inputText[index].style.display === "block") {
       inputText[index].style.display = "none";
       previousDescription = null;
     } else {
       inputText[index].style.display = "block";
       previousDescription = inputText[index];
-      const newNotificationUnRead = document.querySelectorAll(".box-style");
-      getNotification.innerText = newNotificationUnRead.length;
     }
+
+    const newNotificationUnRead =
+      document.querySelectorAll(".box-style").length;
+    getNotification.innerText = newNotificationUnRead;
   });
 });
+
 notificationUnRead.forEach((message) => {
   message.addEventListener("click", () => {
     message.classList.remove("box-style");
@@ -35,10 +41,4 @@ getMarkRead.addEventListener("click", () => {
   });
   const newNotificationUnRead = document.querySelectorAll(".box-style");
   getNotification.innerText = newNotificationUnRead.length;
-});
-
-getDot.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    dot.style.display = "none";
-  });
 });
